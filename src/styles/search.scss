@@ -1,0 +1,101 @@
+.modal-class {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 271px;
+    .modal-content {
+      background-color: #fff;
+      width: 100%;
+      padding: 0 9px;
+      height: 53px;
+      float:none;
+      border: 1px solid #D0D6DD;
+      border-radius: 2px;
+      box-shadow: 2px 10px 22px 0 rgba(0,0,0,0.11);
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+      .search-img {
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+        svg {
+          cursor: pointer;
+          width: 16px;
+          position: relative;
+          right: 7px;
+          &:hover {
+            path {
+              fill: #0978FC;
+            }
+          }
+        }
+      }
+      input {
+        background-color: #fff;
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='14px' viewBox='0 0 14 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: sketchtool 57.1 (101010) - https://sketch.com --%3E%3Ctitle%3EF9560F91-9B7A-49CA-8D88-32883613B718@2x%3C/title%3E%3Cdesc%3ECreated with sketchtool.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='01vlive_suport_tickets' transform='translate(-373.000000, -128.000000)' fill='%23C3C3C3' fill-rule='nonzero'%3E%3Cg id='Group-4' transform='translate(88.000000, 72.000000)'%3E%3Cg id='Table_constants' transform='translate(0.000000, 4.166654)'%3E%3Cg id='Group' transform='translate(80.250000, 46.329408)'%3E%3Cg id='Tablehead' transform='translate(162.000000, 2.000000)'%3E%3Cg id='Stacked-Group'%3E%3Cg%3E%3Cg id='Filter-Copy-menu_option' transform='translate(39.000000, 0.000000)'%3E%3Cg id='menu_option'%3E%3Cg id='Filter-Search' transform='translate(-0.000000, 0.000000)'%3E%3Cpath d='M9.96875,14.4375 C12.4367725,14.4375 14.4375,12.4367725 14.4375,9.96875 C14.4375,7.50072752 12.4367725,5.5 9.96875,5.5 C7.50072752,5.5 5.5,7.50072752 5.5,9.96875 C5.5,12.4367725 7.50072752,14.4375 9.96875,14.4375 Z M9.96875,15.8125 C6.74133599,15.8125 4.125,13.196164 4.125,9.96875 C4.125,6.74133599 6.74133599,4.125 9.96875,4.125 C13.196164,4.125 15.8125,6.74133599 15.8125,9.96875 C15.8125,13.196164 13.196164,15.8125 9.96875,15.8125 Z M13.2202912,13.9821747 C13.0099029,13.7717864 13.0099029,13.4306796 13.2202912,13.2202912 C13.4306796,13.0099029 13.7717864,13.0099029 13.9821747,13.2202912 L17.0297088,16.2678253 C17.2400971,16.4782136 17.2400971,16.8193204 17.0297088,17.0297088 C16.8193204,17.2400971 16.4782136,17.2400971 16.2678253,17.0297088 L13.2202912,13.9821747 Z' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: 10px 9px;
+        text-indent: 15px;
+        width: 210px;
+        height: 34px;
+        border: 1px solid #D0D6DD;
+        border-radius: 2px;
+        padding: 0 15px;
+        margin: 9px 0;
+        color: #4E617B;
+        &::placeholder {
+          opacity: 0.5;
+          color: #4E617B;
+          font-size: 12px;
+          line-height: 15px;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .tableheader-cms-media {
+    .modal-class {
+      left : 40%;
+      transform: translateX(-40%);
+    }
+  }
+  .popup-dropdown {
+    &.modal-class {
+      position: relative;
+      left: unset;
+      transform: unset;
+      width: inherit;
+      height: inherit;
+    }
+    .modal-content {
+      height: inherit;
+      padding: 0;
+      border: 0;
+      box-shadow: unset;
+      input {
+        width: inherit;
+        margin: 0;
+        border: 0;
+        border-radius: 3px;
+        height: inherit;
+        background: none !important;
+        text-indent: 0 !important;
+        padding: 0 5px;
+      }
+      .search-img {
+        display: none;
+      }
+    }
+  }

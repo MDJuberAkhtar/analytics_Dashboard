@@ -1,0 +1,119 @@
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    font-family: "Roboto";
+  }
+  .graph-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="graph-col-"] {
+    float: left;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: #e7e7e7;
+  }
+  .flex-container > .container-header {
+    margin: 10px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .second {
+    margin: 10px;
+    text-align: center;
+    height: 577px;
+    border-radius: 32px;
+    background-color: var(--white);;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+    margin-top: 40px;
+  }
+  /* For mobile phones: */
+  [class*="graph-col-"] {
+    width: 100%;
+  }
+    
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .graph-col-s-1 {width: 8.33%;}
+    .graph-col-s-2 {width: 16.66%;}
+    .graph-col-s-3 {width: 25%;}
+    .graph-col-s-4 {width: 33.33%;}
+    .graph-col-s-5 {width: 41.66%;}
+    .graph-col-s-6 {width: 47%;}
+    .graph-col-s-7 {width: 58.33%;}
+    .graph-col-s-8 {width: 66.66%;}
+    .graph-col-s-9 {width: 75%;}
+    .graph-col-s-10 {width: 83.33%;}
+    .graph-col-s-11 {width: 91.66%;}
+    .graph-col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .graph-col-1 {width: 8.33%;}
+    .graph-col-2 {width: 16.66%;}
+    .graph-col-3 {width: 25%;}
+    .graph-col-4 {width: 33.33%;}
+    .graph-col-5 {width: 41.66%;}
+    .graph-col-6 {width: 47%;}
+    .graph-col-7 {width: 58.33%;}
+    .graph-col-8 {width: 66.66%;}
+    .graph-col-9 {width: 75%;}
+    .graph-col-10 {width: 83.33%;}
+    .graph-col-11 {width: 91.66%;}
+    .graph-col-12 {width: 100%;}
+    .formrowstyle{
+      width:100%;
+    }
+  }
+  @media only screen and (min-width: 1199px) {
+    /* For desktop: */
+    .graph-col-lg-1 {width: 8.33%;}
+    .graph-col-lg-2 {width: 16.66%;}
+    .graph-col-lg-3 {width: 25%;}
+    .graph-col-lg-4 {width: 33.33%;}
+    .graph-col-lg-5 {width: 41.66%;}
+    .graph-col-lg-6 {width: 47%;}
+    .graph-col-lg-7 {width: 58.33%;}
+    .graph-col-lg-8 {width: 66.66%;}
+    .graph-col-lg-9 {width: 75%;}
+    .graph-col-lg-10 {width: 83.33%;}
+    .graph-col-lg-11 {width: 91.66%;}
+    .graph-col-lg-12 {width: 100%;}
+    .formrowstyle{
+      width:100%;
+    }
+  }
+  @media only screen and (min-width: 1300px) {
+    /* For desktop: */
+    .formrowstyle{
+      width:100%;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    /* For desktop: */
+    .formrowstyle{
+      width:100%;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    /* For desktop: */
+    .formrowstyle{
+      width:100%;
+    }
+  }
+  .headtitle {
+    height: 24px;
+    width: 67px;
+    color: #1A1A1A;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 25px;
+    font-family: var(--font-bold);
+    padding-top: 23px;
+  }

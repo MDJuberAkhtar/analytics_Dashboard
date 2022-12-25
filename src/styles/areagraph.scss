@@ -1,0 +1,213 @@
+.levelstyle {
+    float: left;
+    padding-left: 14%;
+  }
+  .graph-form {
+    padding-left: 2em;
+  }
+  .second {
+    &.pad-top {
+      padding-top: 47px;
+    }
+    .formrowstyle {
+      height: 75px;
+      .dropdown-wrapper {
+        display: flex;
+        margin-left: 35px;
+        .dropdown-col {
+          margin: 0 8px;
+          .graph-label {
+            font: 12px/15px "Open Sans Medium";
+            text-align: left;
+            display: block;
+            padding-left: 8px;
+            padding-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+  .secondrow {
+    display: flex;
+    padding: 20px 0 0 44px;
+    .secondrowcol {
+      display: inline;
+      min-width: 100px;
+      width: auto;
+      margin: 0 20px 0 20px;
+      input {
+        display: none;
+      }
+      label {
+        position: relative;
+        font-size: 13px;
+        font-family: var(--font-medium);
+        color: #4E617B;
+        cursor: pointer;
+        &.selected {
+          color: #1e1e1e;
+        }
+      }
+    }
+    .radio-check-data {
+      + label {
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          padding: 1px;
+          position: absolute;
+          left: -22px;
+          background-clip: content-box;
+          border: 2px solid #87919F;
+          background-color: #FFFFFF;
+          border-radius: 50%;
+          margin-top: 2px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      + label {
+        &.selected {
+          &.color-red {
+            &:before {
+              background-color: #ff6363;
+              border: 2px solid #ff6363;
+            }
+          }
+          &.color-aqua {
+            &:before {
+              background-color: #2ebabf;
+              border: 2px solid #2ebabf;
+            }
+          }
+          &.color-blue {
+            &:before {
+              background-color: #579FFF;
+              border: 2px solid #579FFF;
+            }
+          }
+          &.color-yellow {
+            &:before {
+              background-color: #F8BC1B;
+              border: 2px solid #F8BC1B;
+            }
+          }
+          &.color-green {
+            &:before {
+              background-color: #25E4B1;
+              border: 2px solid #25E4B1;
+            }
+          }
+          &.color-light-blue {
+            &:before {
+              background-color: #9AC5FF;
+              border: 2px solid #9AC5FF;
+            }
+          }
+          &.color-orange {
+            &:before {
+              background-color: #FFA179;
+              border: 2px solid #FFA179;
+            }
+          }
+          &.color-surround {
+            &:before {
+              background-color: #FFA762;
+              border: 2px solid #FFA762;
+            }
+          }
+          &.color-hd {
+            &:before {
+              background-color: #FFB106;
+              border: 2px solid #FFB106;
+            }
+          }
+          &.color-fourk {
+            &:before {
+              background-color: #9E74FF;
+              border: 2px solid #9E74FF;
+            }
+          }
+        }
+      }
+    }
+}
+
+.selectstyle {
+    color: #1F2631;
+    font-family: var(--font-regular);
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 14px;
+    background-color: white;
+    box-sizing: border-box;
+    height: 28.5px;
+    width: 74%;
+    border: 1px solid #E9EDF3;
+    border-radius: 3px;
+  }
+  .secondrowcol {
+    cursor: pointer;
+  }
+  .secondrow {
+    margin-top: 12px;
+  }
+  .subscriberdot,.devicedot,.subscriptiondot,.billdot,.parchasesdot,.coupondot,.redemptiondot {
+    stroke: transparent;
+    stroke-width: 10px;
+    cursor: pointer;
+  }
+  .subscriberdot,.devicedot,.subscriptiondot,.billdot,.parchasesdot,.coupondot,.redemptiondot:hover {
+    stroke: rgba(68, 127, 255, 0.3);
+  }
+  .grid .tick {
+    stroke: lightgrey;
+    opacity: 0.7;
+    shape-rendering: crispEdges;
+  }
+  .grid path {
+    stroke-width: 0;
+  }
+  .axis path {
+    fill: none;
+    stroke: #e7e7e7;
+    shape-rendering: crispEdges;
+  }
+  .axis text {
+    fill: #9BA0AD;
+    font-family: "Open Sans";
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 15px;
+    text-align: center;
+  }
+  .axis line {
+    stroke: #e7e7e7;
+    shape-rendering: crispEdges;
+  }
+  .axis .axis-label {
+    font-size: 14px;
+  }
+  .area {
+    fill:none;
+  }
+  div.subscriber,div.device,div.subscription,div.bill,div.parchases,div.coupon,div.redemption, div.provider {
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    border: 0px;
+    border-radius: 8px;
+    font-family: var(--font-bold);
+  }
+  .subscriber p,.device p,.subscription p,.bill p,.parchases p,.coupon p,.redemption p, .provider p {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-bold);
+  }

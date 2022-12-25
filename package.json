@@ -1,0 +1,41 @@
+{
+  "name": "common-dashboard-vlite",
+  "version": "1.0.0",
+  "description": "A common dashboard for vlite vendors",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack serve --config webpack/webpack.development.js --open",
+    "build": "webpack serve --config webpack/webpack.development.js --open"
+  },
+  "author": "MD Juber Akhtar",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-async-to-generator": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@vue/babel-plugin-jsx": "^1.1.1",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-jsx-v-model": "^2.0.3",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "svg-url-loader": "^7.1.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.3.5",
+    "url-loader": "^4.1.1",
+    "vue": "^3.2.31",
+    "vue-loader": "^16.8.3",
+    "vue-router": "^4.0.12",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  },
+  "dependencies": {
+    "d3": "^4.13.0",
+    "mobiotics-dynamic-components-vue": "^2.4.7"
+  }
+}
